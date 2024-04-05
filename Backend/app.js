@@ -64,8 +64,9 @@ app.put("/usuarios/:numeroCarnet", (req, res) => {
 app.delete("/usuarios/:numeroCarnet", (req, res) => {
   const numeroCarnet = req.params.numeroCarnet;
   listaUsuarios = listaUsuarios.filter(
-    (user) => user.numeroCarnet !== numeroCarnet
+    (user) => user.carnet !== numeroCarnet
   );
+  console.log(listaUsuarios);
   res.send("Usuario eliminado exitosamente");
 });
 

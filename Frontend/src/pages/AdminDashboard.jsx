@@ -28,7 +28,7 @@ function AdminDashboard() {
         method: 'DELETE',
       });
       if (response.ok) {
-        setUsuarios(usuarios.filter(usuario => usuario.carnet !== carnet));
+        setUsuarios(prevUsuarios => prevUsuarios.filter(usuario => usuario.carnet !== carnet));
         alert('Usuario eliminado exitosamente');
       } else {
         console.error('Error al eliminar usuario:', response.statusText);
