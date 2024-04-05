@@ -9,7 +9,7 @@ function SignUpForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    
     try {
       const response = await fetch("http://localhost:3000/crear-usuario", {
         method: "POST",
@@ -25,6 +25,7 @@ function SignUpForm() {
 
       if (response.ok) {
         // El usuario se creó exitosamente
+        alert("Usuario creado exitosamente");
         console.log(response.statusText);
       } else {
         // Ocurrió un error al crear el usuario
