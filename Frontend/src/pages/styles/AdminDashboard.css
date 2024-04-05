@@ -1,0 +1,36 @@
+html{
+    background-color: white;
+}
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table th, .admin-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-table tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .delete-btn, .edit-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f44336; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover, .edit-btn:hover {
+    background-color: #d32f2f; /* Darker Red */
+  }
+  
