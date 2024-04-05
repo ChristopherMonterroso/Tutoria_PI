@@ -1,0 +1,9 @@
+/* Comandos para el backend*/
+npm init
+npm install express
+npm install cors
+npm install nodemon
+npm start
+
+/* Comandos para el Frontend*/
+npm install react-router-dom
